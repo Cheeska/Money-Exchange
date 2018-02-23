@@ -1,5 +1,6 @@
 // PLEASE DON'T change function name
-module.exports = function makeExchange(currency) {
+///module.exports =
+function makeExchange(currency) {
 
     var pocket = new Array();
     var pennie = 1;
@@ -28,7 +29,7 @@ module.exports = function makeExchange(currency) {
 
     }
     if (currency > dimes) {
-        ost = Math.floor(currency / dime);
+        ost = Math.floor(currency / dimes);
         pocket.D = ost;
         currency == currency - (ost*dimes);
     }
@@ -44,3 +45,5 @@ module.exports = function makeExchange(currency) {
     }
     return pocket;
 }
+
+console.log(makeExchange(70));
