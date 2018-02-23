@@ -1,5 +1,18 @@
 // PLEASE DON'T change function name
 module.exports = function makeExchange(currency) {
-    // Your code goes here!
-    // Return an object containing the minimum number of coins needed to make change
+
+    var pocket = new Array();
+    var pennie = 1;
+    var nickels = 5;
+    var dimes = 10;
+    var quarters = 25;
+    var halfDoll = 50;
+
+    if (currency <= 0) {
+        return {};
+    }
+
+    return pocket;
+
+
 }
